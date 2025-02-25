@@ -4,7 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Mon Produit</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Réinitialisation des styles par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #243057;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Hero */
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #hero p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Section Produits */
+        #features {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #features h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .feature-item a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .feature-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #471b1b;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,15 +152,15 @@
             <ul>
                 <li><a href="#index.html">Accueil</a></li>
                 <li><a href="#features">Produits</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="formulaire.html">Se conecter</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="formulaire.html">Se connecter</a></li> 
             </ul>
         </nav>
     </header>
 
     <section id="hero">
         <img src="https://media.revistagq.com/photos/63aabffd3f32295c7cf7f036/16:9/w_2560%2Cc_limit/jordan-2023.jpg" alt="Photo du produit">
-        <p>Voici un aperçu de nos produit !</p>
+        <p>Voici un aperçu de nos produits !</p>
     </section>
 
     <section id="features">
@@ -34,19 +173,19 @@
             </div>
             <div class="feature-item">
                 <h3>Femmes</h3>
-                <p>Talons, escapins, ballerines, mocassins....</p>
+                <p>Talons, escarpins, ballerines, mocassins...</p>
                 <a>En savoir plus</a>
             </div>
             <div class="feature-item">
-                <h3>Enfant</h3>
-                <p>basket, ballerines, soulier, kito...</p>
+                <h3>Enfants</h3>
+                <p>Baskets, ballerines, souliers, kito...</p>
                 <a>En savoir plus</a>
             </div>
         </div>
     </section>
 
     <footer id="about">
-            <p>Vous êtes intéressé par nos produits ?<li><a href="contact.html">Contact</a></li>
+        <p>Vous êtes intéressé par nos produits ? <a href="contact.html">Contactez-nous</a></p>
         <p>&copy; 2023 Mon Produit Incroyable. Tous droits réservés.</p>
     </footer>
 </body>
