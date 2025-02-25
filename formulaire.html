@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://media.istockphoto.com/id/1331164844/vector/star-shoes-logo-template-design.jpg?s=612x612&w=0&k=20&c=DIS6yk7txA__kgArWpGkETJ8aIoOBvxInP2OWw-n6yc=" alt="Logo de l'entreprise" class="logo">
+        </div>
+
+        <!-- Formulaire d'inscription -->
+        <h2>Inscription</h2>
+        <form action="/inscription" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motdepasse">Mot de passe</label>
+                <input type="password" id="motdepasse" name="motdepasse" placeholder="Créez un mot de passe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmation_motdepasse">Confirmez le mot de passe</label>
+                <input type="password" id="confirmation_motdepasse" name="confirmation_motdepasse" placeholder="Confirmez votre mot de passe" required>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+            
+        </form>
+    </div>
+</body>
+</html>
